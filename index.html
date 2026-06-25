@@ -484,18 +484,33 @@
     font-size:24px;
     color:var(--coklat);
     line-height:1.2;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:nowrap;
+    white-space:nowrap;
   }
   .nama-orang .gelar{
-    display:inline;
+    display:inline-block;
     font-size:16px;
     color:#000;
     letter-spacing:0.4px;
+    margin-left:8px;
   }
   .anak-dari{
     font-size:15px;
     color:var(--hijau);
     margin-top:4px;
     font-style:italic;
+  }
+ 
+  @media (max-width:420px) {
+    .nama-orang{
+      font-size:18px;
+    }
+    .nama-orang .gelar{
+      font-size:14px;
+    }
   }
  
   /* ============ PROFIL SINGKAT ============ */
