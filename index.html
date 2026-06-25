@@ -423,11 +423,11 @@
     border-radius:10px;
     width:100%;
     max-width:110px;
-    padding:14px 0;
+    padding:12px 0;
   }
   .cd-num{
     font-family:'Marhey', sans-serif;
-    font-size:28px;
+    font-size:26px;
     color:var(--emas);
     display:block;
   }
@@ -436,6 +436,23 @@
     letter-spacing:1px;
     color:var(--hijau);
     text-transform:uppercase;
+  }
+
+  @media (max-width:420px) {
+    .countdown-grid{
+      grid-template-columns:repeat(4,minmax(64px,1fr));
+      gap:10px;
+    }
+    .cd-box{
+      max-width:84px;
+      padding:10px 0;
+    }
+    .cd-num{
+      font-size:22px;
+    }
+    .cd-label{
+      font-size:11px;
+    }
   }
  
   /* ============ MEMPELAI ============ */
@@ -469,10 +486,7 @@
     font-size:24px;
     color:var(--coklat);
     line-height:1.2;
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    flex-wrap:nowrap;
+    display:inline-block;
     white-space:nowrap;
   }
   .nama-orang .gelar{
