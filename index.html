@@ -411,23 +411,23 @@
   /* ============ COUNTDOWN ============ */
   #countdown{background:var(--krem);}
   .countdown-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(76px, 1fr));
+    display:flex;
+    justify-content:center;
     gap:14px;
-    justify-items:center;
-    align-items:center;
+    flex-wrap:wrap;
+    max-width:420px;
+    margin:0 auto;
   }
   .cd-box{
     background:var(--putih);
     border:1.5px solid var(--emas-terang);
     border-radius:10px;
-    width:100%;
-    max-width:110px;
-    padding:12px 0;
+    width:76px;
+    padding:14px 0;
   }
   .cd-num{
     font-family:'Marhey', sans-serif;
-    font-size:26px;
+    font-size:28px;
     color:var(--emas);
     display:block;
   }
@@ -437,18 +437,16 @@
     color:var(--hijau);
     text-transform:uppercase;
   }
-
   @media (max-width:420px) {
     .countdown-grid{
-      grid-template-columns:repeat(4,minmax(64px,1fr));
       gap:10px;
     }
     .cd-box{
-      max-width:84px;
+      width:64px;
       padding:10px 0;
     }
     .cd-num{
-      font-size:22px;
+      font-size:24px;
     }
     .cd-label{
       font-size:11px;
@@ -486,15 +484,12 @@
     font-size:24px;
     color:var(--coklat);
     line-height:1.2;
-    display:inline-block;
-    white-space:nowrap;
   }
   .nama-orang .gelar{
-    display:inline-block;
+    display:inline;
     font-size:16px;
     color:#000;
     letter-spacing:0.4px;
-    margin-left:8px;
   }
   .anak-dari{
     font-size:15px;
